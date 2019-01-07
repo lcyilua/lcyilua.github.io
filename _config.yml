@@ -13,10 +13,18 @@ timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://weii.pro
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
+
+#Baidu URL Submit
+baidu_url_submit:
+  count: 1000 
+  host: www.weii.pro 
+  token: K2k6GFcIZtss7Rgc
+  path: baidu_urls.txt 
+
 
 # Directory
 source_dir: source
@@ -75,9 +83,22 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: edinburgh
 
+# Header
+menu:
+  About: /about
+  Contact: /contact
+  Instagram: https://www.instagram.com
+  LinkedIn: https://www.linkedin.com
+  Facebook: https://www.facebook.com
+
+
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
-  repo: git@github.com:lcyilua/lcyilua.github.io.git
-  branch: master
+  - type: git
+    repo: git@github.com:lcyilua/lcyilua.github.io.git
+    branch: master
+  - type: git
+    repo: ssh://git@weii.pro:26055/var/repo/hexo.git
+    branch: master
+  - type: baidu_url_submitter
