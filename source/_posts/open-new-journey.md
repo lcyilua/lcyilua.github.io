@@ -1,8 +1,9 @@
 ---
 title: Open New Journey
+cover_image: 'https://hexo-pic-1251488836.cos.ap-hongkong.myqcloud.com/pic/cmxZ8VK.png'
+abbrlink: eaaafdbc
 date: 2019-01-11 11:08:46
 tags:
-cover_image: https://hexo-pic-1251488836.cos.ap-hongkong.myqcloud.com/pic/cmxZ8VK.png
 ---
 
 # 写在2019，记录一段新的路程
